@@ -1,0 +1,22 @@
+diff --git a/LibreTransmitter/LibreSensor/SensorContents/SensorData.swift b/LibreTransmitter/LibreSensor/SensorContents/SensorData.swift
+index 59c16d3..3d50e64 100644
+--- a/LibreTransmitter/LibreSensor/SensorContents/SensorData.swift
++++ b/LibreTransmitter/LibreSensor/SensorContents/SensorData.swift
+@@ -182,7 +182,7 @@ public struct SensorData: Codable, SensorDataProtocol {
+                 extraOffset = try container.decode(Double.self, forKey: .extraOffset)
+                 
+             } catch {
+-                extraOffset = 0
++                extraOffset = 15
+                 extraSlope = 1
+                 
+             }
+@@ -212,7 +212,7 @@ public struct SensorData: Codable, SensorDataProtocol {
+             self.i5 = i5
+             self.i6 = i6
+             self.extraSlope = 1
+-            self.extraOffset = 0
++            self.extraOffset = 15
+             self.isValidForFooterWithReverseCRCs = isValidForFooterWithReverseCRCs
+         }
+ 
