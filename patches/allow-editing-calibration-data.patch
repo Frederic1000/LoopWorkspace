@@ -1,0 +1,13 @@
+diff --git a/LibreTransmitter/Features.swift b/LibreTransmitter/Features.swift
+index 0253e1d..83dd0a3 100644
+--- a/LibreTransmitter/Features.swift
++++ b/LibreTransmitter/Features.swift
+@@ -17,7 +17,7 @@ public final class Features {
+     static public var glucoseSettingsRequireAuthentication = false
+     static public var alarmSettingsViewRequiresAuthentication = false
+     
+-    static public var allowsEditingFactoryCalibrationData = false
++    static public var allowsEditingFactoryCalibrationData = true
+     static public var allowOneMinuteReadings = false
+     
+     // Uses Vibration through apples audio api for glucose alarms. This could be considered an api abuse from apple's standpoint;
